@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMI VIZ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="./sources/favicon.png">
+</head>
+
+<body>
+  <header>
+    <div class="logo"></div>
+    <div class="backstat">
+      <div class="G"></div>
+      <div class="D"></div>
+    </div>
+    <h1>Welcome<br />to</h1>
+    <a href="#explain">
+      <div class="fleche"></div>
+    </a>
+  </header>
+  <main>
+    <section class="blabla" id="explain">
+      <div class="title">
+        <h2 class="ombre">MMI<br />VIZ</h2>
+        <h2 class="norm">MMI<br />VIZ</h2>
+      </div>
+      <p>
+        Votre site de visualisation du festival MMI :<br />Sur ce site, vous pourrez visualiser quelle est la ou les
+        université.s à avoir gagné le plus de trophées au cours du festival MMI depuis 2015.
+      </p>
+      <p>
+        Vous pouvez également, en cliquant sur le nom des universités dans le menu de droite, voir le détail des
+        trophées qu'ils ont gagnés, pour chaque année, ainsi que le détail du classement du trophée (1er, 2ème ou 3ème).
+      </p>
+      <a href="#graph">
+        <div class="fleche droite"></div>
+      </a>
+    </section>
+    <section class="graphc" id="graph">
+      <div>
+        <h2>STATS</h2>
+        <h3 class="titreGraph">Universités ayant gagné le plus de premières places par année</h3>
+        <div class="flexbox">
+          <svg viewbox="-25 -185 330 210" width="63.75vw" height="75vh">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3" markerHeight="3" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" />
+              </marker>
+            </defs>
+            <g class="valeurs"></g>
+            <g class="graph"></g>
+            <line x1="0" y1="0" x2="302" y2="0" stroke="black" marker-end="url(#arrow)"></line>
+            <line x1="0" y1="0.5" x2="0" y2="-172" stroke="black" marker-end="url(#arrow)"></line>
+          </svg>
+          <div class="flexbox vertical">
+            <section class="universite"></section>
+            <div>
+              <label for="trophy">Je prends en compte :</label>
+              <br>
+              <select name="trophy" id="trophy">
+                <option value="0" selected="selected">Les premières places</option>
+                <option value="1">Toutes les places</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div></div>
+    <div class="gradient"></div>
+    <div class="G"></div>
+    <div class="D"></div>
+    <div class="content">
+      <h2>Mentions légales</h2>
+      <div class="colonnes">
+        <p>©Morgan ZARKA & Waldi FIAGA <br>
+          Ce site à été créé et édité par Morgan ZARKA (morgan.zarka@edu.univ-eiffel.fr) et Waldi FIAGA
+          (waldi.fiaga@edu.univ-eiffel.fr).
+          <br><br>
+          Il est hébergé sur les serveurs de GitHub, via l’outil GitHub pages (PRIUS BERNHARDPLEIN 200 99135 PAYS BAS)
+          <br><br>
+          Dans la création de ce site, Waldi.F a travaillé sur le design et le développement front.
+          Morgan.Z a travaillé sur le développement front et back.
+          <br><br>
+          Le jeu de données a été créé par nous même, mais voici les sources :
+        <ul>
+          <li><a href="https://2023.festivalmmi.fr/laureats.276_dcp.html">Source des données de 2023</a></li>
+          <li><a href="https://festival2022.iutmmi.fr/laureats.276_dcp.html">Source des données de 2022</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VrPx1opuGQM">Source des données de 2021</a></li>
+          <li><a href="https://iutmmi.fr/festival_subdomain/palmares/">Source des données de 2020</a></li>
+          <li><a href="https://www.youtube.com/watch?v=EC69l2z3_Ug">Source des données de 2019</a></li>
+          <li><a href="https://www.youtube.com/watch?v=25I2G2m4asA">Source des données de 2018</a></li>
+          <li><a href="https://iutmmi.fr/le-festival-mmi/">Source des données de 2015 à 2017</a></li>
+        </ul>
+        Pour les sources hors de YouTube, il est nécessaire de demander une autorisation au préalable (”Toute
+        reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel
+        que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de : Association
+        Métiers du Multimédia et de l’Internet (Association MMI).”).
+        Pour ce qui est des informations tirées de YouTube, elles sont publiques, donc utilisables telles quelles.
+        </p>
+
+        <p>Le présent site ne traitant aucune données personnalisés, le RGPD ne s'applique pas</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup">
+    <div class="contentPopup">
+      <h2>Attention, il est possible que le site ne fonctionne pas correctement.</h2>
+      <p>Ce site n'a pas été développé pour fonctionner avec une définition inférieur à 1024 pixels. Il est donc
+        possible qu'il ne fonctionne pas correctement. Nous vous conseillons d'agrandir la fenêtre si vous êtes sur
+        ordinateur, ou alors d'utiliser le site sur depuis un ordinateur si vous êtes sur mobile ou tablette.</p>
+      <button class="btnPopup">Visiter quand même le site</button>
+    </div>
+  </div>
+
+  <script src="./d3.v7.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
