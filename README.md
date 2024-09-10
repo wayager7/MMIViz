@@ -1,7 +1,7 @@
 # Dataviz
 ## Introduction
 
-Moi-même ([@Suzoka](https://github.com/Suzoka)) et  [@wayager7](https://github.com/wayager7) avons l'honneur de vous présenter MMIViz, un site de datavisualisation sur le thème du festival MMI.
+[@Suzoka](https://github.com/Suzoka) et moi-même ([@wayager7](https://github.com/wayager7)) avons l'honneur de vous présenter MMIViz, un site de datavisualisation sur le thème du festival MMI.
 Nous sommes remontés jusqu'à 2015, dans le but de pouvoir visualiser la quantité de prix gagnés par années par universités au cours des différents festivals.
 Le site a été créé dans le cadre de la SAÉ 2.03.
 
