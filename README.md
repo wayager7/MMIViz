@@ -5,7 +5,7 @@
 Nous sommes remontés jusqu'à 2015, dans le but de pouvoir visualiser la quantité de prix gagnés par années par universités au cours des différents festivals.
 Le site a été créé dans le cadre de la SAÉ 2.03.
 
-Vous pouvez le retrouver à cette URL : https://suzoka.github.io/MMIViz/
+Vous pouvez le retrouver à cette URL : https://wayager7.github.io/MMIViz/
 
 Nous vous souhaitons un bon data-visionnage !
 
